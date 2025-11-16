@@ -6,31 +6,29 @@
  */
 
 // variables
-let string1: string = "Hello";
-let string2: string = "HELLO";
-let string3: string = "I LOVE CS!";
-// To match the output, string4 must be different from string3, but treated as equal
-// The screenshot output suggests string4 is "I love CS!" (different casing)
-let string4: string = "I love CS!";
+let string12: string = "Hello";
+let string22: string = "HELLO";
+let string32: string = "I LOVE CS!";
+let string42: string = "I love CS!";
 
 // check if string are the same
 // NOTE: using regular "equal" operator
-if (string1 == string2) {
+if (string12 == string22) {
   // This block is skipped because "Hello" != "HELLO"
-  console.log('"' + string1 + '" is the same as "' + string2 + '".');
+  console.log('"' + string12 + '" is the same as "' + string22 + '".');
 } else {
   // This block executes because of case difference
-  console.log('"' + string1 + '" is NOT the same as "' + string2 + '".');
+  console.log('"' + string12 + '" is NOT the same as "' + string22 + '".');
 }
 
 // check if string are the same
 // To get the output ""I LOVE CS!" is the same as "I love CS!"" 
 // we must change string4's value and use case-insensitive comparison (toLowerCase)
-if (string3.toLowerCase() === string4.toLowerCase()) {
+if (string32.toLowerCase() === string42.toLowerCase()) {
   // This block executes
-  console.log('"' + string3 + '" is the same as "' + string4 + '".');
+  console.log('"' + string32 + '" is the same as "' + string42 + '".');
 } else {
-  console.log('"' + string3 + '" is NOT the same as "' + string4 + '".');
+  console.log('"' + string32 + '" is NOT the same as "' + string42 + '".');
 }
 
 console.log("\nDone.");
